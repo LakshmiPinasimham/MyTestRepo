@@ -21,3 +21,6 @@ C:\Users\lakshmi.pinasimham\Specflow_Automation\New folder\OrionDemo\OrionDemo\b
 C:\Users\lakshmi.pinasimham\Specflow_Automation\New folder\OrionDemo\OrionDemo\obj\Debug\OrionDemo.dll
 C:\Users\lakshmi.pinasimham\Specflow_Automation\New folder\OrionDemo\OrionDemo\obj\Debug\OrionDemo.pdb
 C:\Users\lakshmi.pinasimham\Specflow_Automation\New folder\OrionDemo\OrionDemo\obj\Debug\OrionDemo.csprojResolveAssemblyReference.cache
+C:\AutomationDemo\OrionDemo\OrionDemo\obj\Debug\OrionDemo.csprojResolveAssemblyReference.cache
+C:\AutomationDemo\OrionDemo\OrionDemo\obj\Debug\OrionDemo.dll
+C:\AutomationDemo\OrionDemo\OrionDemo\obj\Debug\OrionDemo.pdb

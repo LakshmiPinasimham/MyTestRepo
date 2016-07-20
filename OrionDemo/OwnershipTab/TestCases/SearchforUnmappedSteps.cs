@@ -31,14 +31,14 @@ namespace OrionSample.TestCases
         public int index = 2;
         public string mappingType2;
         string unmappedcellValue;
-        public string [] excelData = new string[];
+        public string [] excelData = new string[100];
 
 
 
         [Given(@"I have taken TestData from excel")]
         public void GivenIHaveTakenTestDataFromExcel()
         {
-            var filePath = @"C:\Users\lakshmi.pinasimham\Specflow_Automation\New folder\OrionDemo\OrionDemo\SampleTestData\OwnerShipTestData1.xlsx";
+            var filePath = @"C:\AutomationDemo\OrionDemo\OrionDemo\SampleTestData\OwnerShipTestData1.xlsx";
             FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read);
             IExcelDataReader excelReader;
             int idx = filePath.LastIndexOf('.');

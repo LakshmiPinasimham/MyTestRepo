@@ -33,6 +33,8 @@ namespace OrionSample
             }
             catch(Exception exp)
             {
+                Console.WriteLine(exp);
+
             }
             
 

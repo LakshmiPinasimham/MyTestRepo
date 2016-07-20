@@ -111,27 +111,11 @@ testRunner.When("I clicked on Save button", ((string)(null)), ((TechTalk.SpecFlo
 testRunner.And("I have clicked on OK button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
 testRunner.Then("the records mapped should be saved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("To validate the Mapped Records", new string[] {
-                "mytag"}, SourceLine=26)]
-        public virtual void ToValidateTheMappedRecords()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("To validate the Mapped Records", new string[] {
-                        "mytag"});
-#line 27
-this.ScenarioSetup(scenarioInfo);
-#line 4
-this.FeatureBackground();
-#line 28
-testRunner.Given("I have selected the Form Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 29
-testRunner.And("I have selected the mapping type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 30
+#line 25
+testRunner.Given("I have selected the mapping type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 26
 testRunner.When("I have clicked on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 31
+#line 27
 testRunner.Then("Mapped records will be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

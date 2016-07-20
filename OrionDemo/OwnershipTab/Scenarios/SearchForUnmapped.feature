@@ -23,6 +23,7 @@ When I clicked on Save button
 And I have clicked on OK button
 Then the records mapped should be saved
 
+@mytag
 Scenario: To validate the Mapped Records
 Given I have selected the Form Type  
 And I have selected the mapping type

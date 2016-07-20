@@ -17,8 +17,7 @@ namespace OrionDemo.OwnershipTab.Scenarios
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("SearchforUnmapped")]
+    [TechTalk.SpecRun.FeatureAttribute("SearchforUnmapped", Description="\tSearch for Unmapped Records", SourceFile="OwnershipTab\\Scenarios\\SearchForUnmapped.feature", SourceLine=0)]
     public partial class SearchforUnmappedFeature
     {
         
@@ -27,7 +26,7 @@ namespace OrionDemo.OwnershipTab.Scenarios
 #line 1 "SearchForUnmapped.feature"
 #line hidden
         
-        [NUnit.Framework.TestFixtureSetUpAttribute()]
+        [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -35,19 +34,18 @@ namespace OrionDemo.OwnershipTab.Scenarios
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.TestFixtureTearDownAttribute()]
+        [TechTalk.SpecRun.FeatureCleanup()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [TechTalk.SpecRun.ScenarioCleanup()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -75,9 +73,8 @@ testRunner.Then("The Ownership tab should be opened", ((string)(null)), ((TechTa
 #line hidden
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search For Unmapped Records to Map")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [TechTalk.SpecRun.ScenarioAttribute("Search For Unmapped Records to Map", new string[] {
+                "mytag"}, SourceLine=9)]
         public virtual void SearchForUnmappedRecordsToMap()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search For Unmapped Records to Map", new string[] {
@@ -118,25 +115,32 @@ testRunner.Then("the records mapped should be saved", ((string)(null)), ((TechTa
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("To validate the Mapped Records")]
+        [TechTalk.SpecRun.ScenarioAttribute("To validate the Mapped Records", new string[] {
+                "mytag"}, SourceLine=26)]
         public virtual void ToValidateTheMappedRecords()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("To validate the Mapped Records", ((string[])(null)));
-#line 26
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("To validate the Mapped Records", new string[] {
+                        "mytag"});
+#line 27
 this.ScenarioSetup(scenarioInfo);
 #line 4
 this.FeatureBackground();
-#line 27
-testRunner.Given("I have selected the Form Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 28
-testRunner.And("I have selected the mapping type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("I have selected the Form Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 29
-testRunner.When("I have clicked on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.And("I have selected the mapping type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
+testRunner.When("I have clicked on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 31
 testRunner.Then("Mapped records will be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.TestRunCleanup()]
+        public virtual void TestRunCleanup()
+        {
+            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }

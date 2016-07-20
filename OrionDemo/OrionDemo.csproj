@@ -78,6 +78,10 @@
       <HintPath>..\packages\Excel-DNA.Interop.14.0.1\lib\Office.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -89,6 +93,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun, Version=1.5.2.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\TechTalk.SpecRun.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="TestStack.White, Version=0.13.0.0, Culture=neutral, PublicKeyToken=2672efbf3e161801, processorArchitecture=MSIL">
@@ -125,6 +133,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Default.srprofile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="OwnershipTab\Scenarios\LaunchApp.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -133,6 +144,13 @@
     <None Include="OwnershipTab\Scenarios\SearchForUnmapped.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SearchForUnmapped.feature.cs</LastGenOutput>
+    </None>
+    <None Include="runtests.cmd" />
+    <None Include="SpecRunTestProfile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpecRunTestProfile_2011_09.xsd">
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -76,11 +76,11 @@ testRunner.Then("The Ownership tab should be opened", ((string)(null)), ((TechTa
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search For Unmapped Records and Mapping")]
+        [NUnit.Framework.DescriptionAttribute("Search For Unmapped Records to Map")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void SearchForUnmappedRecordsAndMapping()
+        public virtual void SearchForUnmappedRecordsToMap()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search For Unmapped Records and Mapping", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search For Unmapped Records to Map", new string[] {
                         "mytag"});
 #line 10
 this.ScenarioSetup(scenarioInfo);
@@ -114,13 +114,26 @@ testRunner.When("I clicked on Save button", ((string)(null)), ((TechTalk.SpecFlo
 testRunner.And("I have clicked on OK button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
 testRunner.Then("the records mapped should be saved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 25
-testRunner.Given("I have selected the Form Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("To validate the Mapped Records")]
+        public virtual void ToValidateTheMappedRecords()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("To validate the Mapped Records", ((string[])(null)));
 #line 26
-testRunner.And("I have selected the mapping type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+this.ScenarioSetup(scenarioInfo);
+#line 4
+this.FeatureBackground();
 #line 27
-testRunner.When("I have clicked on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Given("I have selected the Form Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 28
+testRunner.And("I have selected the mapping type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 29
+testRunner.When("I have clicked on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 30
 testRunner.Then("Mapped records will be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

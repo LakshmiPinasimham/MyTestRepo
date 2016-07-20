@@ -32,6 +32,7 @@ namespace OrionSample.TestCases
         public string mappingType2;
         string unmappedcellValue;
         public string [] excelData = new string[100];
+        public string mappedCellValue;
 
 
 
@@ -209,18 +210,21 @@ namespace OrionSample.TestCases
             {
 
 
-                string mappedCellValue = selectRecord1.Rows[i].Cells[2].Value.ToString();
+                mappedCellValue = selectRecord1.Rows[i].Cells[2].Value.ToString();
 
                 Console.WriteLine(mappedCellValue);
 
                 if (mappedCellValue.Equals(unmappedcellValue))
                 {
-                    Assert.AreEqual("pass", "pass");
+                     
                     break;
                 }
 
+            
 
             }
+
+            Assert.AreEqual(mappedCellValue, unmappedcellValue);
 
 
 

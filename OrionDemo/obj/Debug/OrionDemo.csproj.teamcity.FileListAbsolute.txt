@@ -21,3 +21,6 @@ C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\TestStack.White.pdb
 C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\TestStack.White.xml
 C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\TestStack.White.Reporting.pdb
 C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\TestStack.White.ScreenObjects.pdb
+C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\Default.srprofile
+C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\SpecRun.SpecFlowPlugin.dll
+C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\TechTalk.SpecRun.dll

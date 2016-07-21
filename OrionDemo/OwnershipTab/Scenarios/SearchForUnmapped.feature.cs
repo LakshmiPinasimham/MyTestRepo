@@ -116,24 +116,24 @@ testRunner.Then("the records mapped should be saved", ((string)(null)), ((TechTa
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("To validate the Mapped Records", new string[] {
-                "mytag"}, SourceLine=30)]
+                "mytag"}, SourceLine=28)]
         public virtual void ToValidateTheMappedRecords()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("To validate the Mapped Records", new string[] {
                         "mytag"});
-#line 31
+#line 29
 this.ScenarioSetup(scenarioInfo);
 #line 4
 this.FeatureBackground();
-#line 32
+#line 30
 testRunner.Given("I have clicked on the USSM button in Ownership Window", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 33
+#line 31
 testRunner.And("I have selected the Form Type  as \'424b4\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 34
-testRunner.And("I have selected the mapping type as \'Mapping\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 35
+#line 32
+testRunner.And("I have selected the mapping type as \'Mapped\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 33
 testRunner.When("I have clicked on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 36
+#line 34
 testRunner.Then("Mapped records should  display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

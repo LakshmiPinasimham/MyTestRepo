@@ -16,6 +16,7 @@ using System.IO;
 using Excel;
 using System.Data;
 using NUnit.Framework;
+using System.Configuration;
 
 namespace OrionDemo.OwnershipTab.TestCases
 {
@@ -39,11 +40,13 @@ namespace OrionDemo.OwnershipTab.TestCases
         [Given(@"I have taken TestData from excel")]
         public void GivenIHaveTakenTestDataFromExcel()
         {
-            var filePath = @"C:\AutomationDemo\OrionDemo\OrionDemo\SampleTestData\OwnerShipTestData1.xlsx";
-            FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read);
+            // var filePath = @"C:\AutomationDemo\OrionDemo\OrionDemo\SampleTestData\OwnerShipTestData1.xlsx";
+
+            var filepath = ConfigurationManager.AppSettings["path"];
+            FileStream stream = File.Open(filepath, FileMode.Open, FileAccess.Read);
             IExcelDataReader excelReader;
-            int idx = filePath.LastIndexOf('.');
-            if (filePath.Substring(idx + 1) == "xls")
+            int idx = filepath.LastIndexOf('.');
+            if (filepath.Substring(idx + 1) == "xls")
             {
                 //1. Reading from a binary Excel file ('97-2003 format; *.xls)
                 excelReader = ExcelReaderFactory.CreateBinaryReader(stream);
@@ -188,47 +191,47 @@ namespace OrionDemo.OwnershipTab.TestCases
         }
 
 
-        [Given(@"I have selected the mapping type")]
-        public void GivenIHaveSelectedTheMappingType()
-        {
-            var mappingComboBox = currentWindow.Get<ComboBox>(SearchCriteria.ByAutomationId(ObjectRepository.OwnershipWindow.mappingComboBox));
-            mappingComboBox.Select(mappingType2);
-        }
+        //[Given(@"I have selected the mapping type")]
+        //public void GivenIHaveSelectedTheMappingType()
+        //{
+        //    var mappingComboBox = currentWindow.Get<ComboBox>(SearchCriteria.ByAutomationId(ObjectRepository.OwnershipWindow.mappingComboBox));
+        //    mappingComboBox.Select(mappingType2);
+        //}
 
 
-        [Then(@"Mapped records will be displayed")]
-        public void ThenMappedRecordsWillBeDisplayed()
-        {
+        //[Then(@"Mapped records will be displayed")]
+        //public void ThenMappedRecordsWillBeDisplayed()
+        //{
 
 
 
-            var selectRecord1 = currentWindow.Get<TestStack.White.UIItems.TableItems.Table>(SearchCriteria.ByAutomationId(ObjectRepository.OwnershipWindow.rowSelectionGridView));
-            int count = selectRecord1.Rows.Count;
+        //    var selectRecord1 = currentWindow.Get<TestStack.White.UIItems.TableItems.Table>(SearchCriteria.ByAutomationId(ObjectRepository.OwnershipWindow.rowSelectionGridView));
+        //    int count = selectRecord1.Rows.Count;
 
 
-            for (int i = 0; i < count; i++)
-            {
+        //    for (int i = 0; i < count; i++)
+        //    {
 
 
-                mappedCellValue = selectRecord1.Rows[i].Cells[2].Value.ToString();
+        //        mappedCellValue = selectRecord1.Rows[i].Cells[2].Value.ToString();
 
-                Console.WriteLine(mappedCellValue);
+        //        Console.WriteLine(mappedCellValue);
 
-                if (mappedCellValue.Equals(unmappedcellValue))
-                {
+        //        if (mappedCellValue.Equals(unmappedcellValue))
+        //        {
                      
-                    break;
-                }
+        //            break;
+        //        }
 
             
 
-            }
+        //    }
 
-            Assert.AreEqual(mappedCellValue, unmappedcellValue);
+        //    Assert.AreEqual(mappedCellValue, unmappedcellValue);
 
 
 
-        }
+        //}
 
 
 

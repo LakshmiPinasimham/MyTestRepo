@@ -8,7 +8,7 @@ using TestStack.White.UIItems.WindowItems;
 using TechTalk.SpecFlow;
 using System.Configuration;
 
-namespace OrionSample
+namespace OrionDemo.OwnershipTab.TestCases
 {
     [Binding]
     public class LaunchOrionSteps

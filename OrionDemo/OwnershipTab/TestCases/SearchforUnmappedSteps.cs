@@ -17,7 +17,7 @@ using Excel;
 using System.Data;
 using NUnit.Framework;
 
-namespace OrionSample.TestCases
+namespace OrionDemo.OwnershipTab.TestCases
 {
     [Binding]
     public class SearchforUnmappedSteps

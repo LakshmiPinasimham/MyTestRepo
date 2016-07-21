@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrionSample.ObjectRepository
+namespace OrionDemo.OwnershipTab.ObjectRepository
 {
   public  class OwnershipWindow
     {

@@ -42,7 +42,7 @@ namespace OrionDemo.OwnershipTab.TestCases
         {
             // var filePath = @"C:\AutomationDemo\OrionDemo\OrionDemo\SampleTestData\OwnerShipTestData1.xlsx";
 
-            var filepath = ConfigurationManager.AppSettings["path"];
+            var filepath = ConfigurationManager.AppSettings["excelfilepath"];
             FileStream stream = File.Open(filepath, FileMode.Open, FileAccess.Read);
             IExcelDataReader excelReader;
             int idx = filepath.LastIndexOf('.');

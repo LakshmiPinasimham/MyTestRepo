@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OrionSample.ObjectRepository
 {
-    class OwnershipWindow
+  public  class OwnershipWindow
     {
         public const string ownershipButoon = "btn_own";
         public const string ownershipWindow = "frm_Ownership";

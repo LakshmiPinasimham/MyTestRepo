@@ -32,7 +32,6 @@ namespace OrionDemo.OwnershipTab.TestCases
         public int index = 2;
         public string mappingType2;
         string unmappedcellValue;
-        public string [] excelData = new string[100];
         public string mappedCellValue;
 
 
@@ -40,8 +39,7 @@ namespace OrionDemo.OwnershipTab.TestCases
         [Given(@"I have taken TestData from excel")]
         public void GivenIHaveTakenTestDataFromExcel()
         {
-            // var filePath = @"C:\AutomationDemo\OrionDemo\OrionDemo\SampleTestData\OwnerShipTestData1.xlsx";
-
+            
             var filepath = ConfigurationManager.AppSettings["excelfilepath"];
             FileStream stream = File.Open(filepath, FileMode.Open, FileAccess.Read);
             IExcelDataReader excelReader;
@@ -191,52 +189,5 @@ namespace OrionDemo.OwnershipTab.TestCases
         }
 
 
-        //[Given(@"I have selected the mapping type")]
-        //public void GivenIHaveSelectedTheMappingType()
-        //{
-        //    var mappingComboBox = currentWindow.Get<ComboBox>(SearchCriteria.ByAutomationId(ObjectRepository.OwnershipWindow.mappingComboBox));
-        //    mappingComboBox.Select(mappingType2);
-        //}
-
-
-        //[Then(@"Mapped records will be displayed")]
-        //public void ThenMappedRecordsWillBeDisplayed()
-        //{
-
-
-
-        //    var selectRecord1 = currentWindow.Get<TestStack.White.UIItems.TableItems.Table>(SearchCriteria.ByAutomationId(ObjectRepository.OwnershipWindow.rowSelectionGridView));
-        //    int count = selectRecord1.Rows.Count;
-
-
-        //    for (int i = 0; i < count; i++)
-        //    {
-
-
-        //        mappedCellValue = selectRecord1.Rows[i].Cells[2].Value.ToString();
-
-        //        Console.WriteLine(mappedCellValue);
-
-        //        if (mappedCellValue.Equals(unmappedcellValue))
-        //        {
-                     
-        //            break;
-        //        }
-
-            
-
-        //    }
-
-        //    Assert.AreEqual(mappedCellValue, unmappedcellValue);
-
-
-
-        //}
-
-
-
-
-
-
-    }
+            }
 }

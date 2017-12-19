@@ -1,0 +1,52 @@
+﻿VS filter: testpath:TestAssembly:OrionDemo/Feature:SearchforUnmapped/Scenario:To+validate+the+Mapped+Records
+Discovering target: Default
+Discovering tests from assembly: C:\AutomationDemo\OrionDemo\OrionDemo\bin\Debug\OrionDemo.dll
+Appdomain Disposed
+Test Suite Dump
+#0: OrionDemo/Default - 
+#1: Default - 
+#2: OrionDemo - 
+#3: SearchforUnmapped - 
+#5: To validate the Mapped Records - TestAssembly:OrionDemo/Feature:SearchforUnmapped/Scenario:To+validate+the+Mapped+Records
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread
+Thread#0:Scheduler: using testitem #5 for thread
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for OrionDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\lakshmi.pinasimham\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I have launched Orion App
+Thread#0:T:App is launching..
+Thread#0:T:System.NullReferenceException: Object reference not set to an instance of an object.
+Thread#0:T:   at OrionDemo.OwnershipTab.TestCases.LaunchOrionSteps.GivenIHaveLaunchedOrionApp() in C:\AutomationDemo\OrionDemo\OrionDemo\OwnershipTab\TestCases\LaunchOrionSteps.cs:line 30
+Thread#0:T:done: LaunchOrionSteps.GivenIHaveLaunchedOrionApp() (2.1s)
+Thread#0:B:And I have clicked on Ownership tab
+Thread#0:T:error: Couldn't find window with SearchCriteria Name=Orion in process 10424, after waiting for 5000 ms
+Thread#0:B:Then The Ownership tab should be opened
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Given I have clicked on the USSM button in Ownership Window
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And I have selected the Form Type  as '424b4'
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And I have selected the mapping type as 'Mapped'
+Thread#0:T:skipped because of previous errors
+Thread#0:B:When I have clicked on Search button
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then Mapped records should  display
+Thread#0:T:skipped because of previous errors
+Cancelling because configured number of failures reached
+Thread#0:T:[Info - 8:05:40 PM] 'TestStack.White.Application' Closing Application
+Thread#0: Test #5/0 is finished on thread #0 as Failed within 37.741 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

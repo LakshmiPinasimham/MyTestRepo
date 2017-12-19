@@ -23,19 +23,11 @@ namespace OrionDemo.OwnershipTab.TestCases
         {
             app = Application.Launch(ConfigurationManager.AppSettings["path"]);
             Console.WriteLine("App is launching..");
+            currentWindow = app.GetWindow("Login", InitializeOption.NoCache);
 
-            try
-            {
-             
-                    var loginWindowOkBtn = currentWindow.Get<Button>(SearchCriteria.ByText(ObjectRepository.OwnershipWindow.loginWindowOkButton));
-                    loginWindowOkBtn.Click();
-              
-            }
-            catch(Exception exp)
-            {
-                Console.WriteLine(exp);
+            var loginWindowOkBtn = currentWindow.Get<Button>(SearchCriteria.ByText(ObjectRepository.OwnershipWindow.loginWindowOkButton));
+             loginWindowOkBtn.Click();
 
-            }
             
 
         }
@@ -61,7 +53,7 @@ namespace OrionDemo.OwnershipTab.TestCases
         [AfterScenario]
         public void CloseApplication()
         {
-            app.Close();
+            
 
         }
     }

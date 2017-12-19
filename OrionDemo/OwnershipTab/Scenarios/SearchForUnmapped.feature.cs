@@ -17,7 +17,8 @@ namespace OrionDemo.OwnershipTab.Scenarios
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("SearchforUnmapped", Description="\tSearch for Unmapped Records", SourceFile="OwnershipTab\\Scenarios\\SearchForUnmapped.feature", SourceLine=0)]
+    [NUnit.Framework.TestFixtureAttribute()]
+    [NUnit.Framework.DescriptionAttribute("SearchforUnmapped")]
     public partial class SearchforUnmappedFeature
     {
         
@@ -26,7 +27,7 @@ namespace OrionDemo.OwnershipTab.Scenarios
 #line 1 "SearchForUnmapped.feature"
 #line hidden
         
-        [TechTalk.SpecRun.FeatureInitialize()]
+        [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -34,18 +35,19 @@ namespace OrionDemo.OwnershipTab.Scenarios
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [TechTalk.SpecRun.FeatureCleanup()]
+        [NUnit.Framework.TestFixtureTearDownAttribute()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
+        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
-        [TechTalk.SpecRun.ScenarioCleanup()]
+        [NUnit.Framework.TearDownAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -73,8 +75,9 @@ testRunner.Then("The Ownership tab should be opened", ((string)(null)), ((TechTa
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Search For Unmapped Records to Map", new string[] {
-                "mytag"}, SourceLine=9)]
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Search For Unmapped Records to Map")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void SearchForUnmappedRecordsToMap()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search For Unmapped Records to Map", new string[] {
@@ -115,8 +118,9 @@ testRunner.Then("the records mapped should be saved", ((string)(null)), ((TechTa
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("To validate the Mapped Records", new string[] {
-                "mytag"}, SourceLine=28)]
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("To validate the Mapped Records")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void ToValidateTheMappedRecords()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("To validate the Mapped Records", new string[] {
@@ -137,12 +141,6 @@ testRunner.When("I have clicked on Search button", ((string)(null)), ((TechTalk.
 testRunner.Then("Mapped records should  display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
-        }
-        
-        [TechTalk.SpecRun.TestRunCleanup()]
-        public virtual void TestRunCleanup()
-        {
-            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }

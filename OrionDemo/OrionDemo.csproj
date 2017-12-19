@@ -62,10 +62,6 @@
       <HintPath>..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework.testcasestorage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nunit.Framework.TestCaseStorage.1.0.1\lib\nunit.framework.testcasestorage.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="nunit.util, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.util.dll</HintPath>
       <Private>False</Private>
@@ -78,13 +74,10 @@
       <HintPath>..\packages\Excel-DNA.Interop.14.0.1\lib\Office.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -95,9 +88,17 @@
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="TechTalk.SpecRun, Version=1.5.2.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
-      <HintPath>..\packages\SpecRun.SpecFlow.1.5.2\lib\net45\TechTalk.SpecRun.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\..\..\Users\lakshmi.pinasimham\Downloads\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView">
+      <HintPath>..\..\..\Users\lakshmi.pinasimham\Downloads\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\..\..\Users\lakshmi.pinasimham\Downloads\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <HintPath>..\..\..\Users\lakshmi.pinasimham\Downloads\TelerikCommon.dll</HintPath>
     </Reference>
     <Reference Include="TestStack.White, Version=0.13.0.0, Culture=neutral, PublicKeyToken=2672efbf3e161801, processorArchitecture=MSIL">
       <HintPath>..\packages\TestStack.White.0.13.3\lib\net40\TestStack.White.dll</HintPath>
@@ -137,13 +138,7 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SearchForUnmapped.feature.cs</LastGenOutput>
     </None>
-    <None Include="runtests.cmd" />
-    <None Include="SpecRunTestProfile.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SpecRunTestProfile_2011_09.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Sample.runsettings" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

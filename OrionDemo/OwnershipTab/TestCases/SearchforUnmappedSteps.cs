@@ -33,6 +33,7 @@ namespace OrionDemo.OwnershipTab.TestCases
         public string mappingType2;
         string unmappedcellValue;
         public string mappedCellValue;
+        String sample;
 
 
 
@@ -185,7 +186,7 @@ namespace OrionDemo.OwnershipTab.TestCases
         public void ThenTheRecordsMappedShouldBeSaved()
         {
             Console.WriteLine("Record is saved");
-
+  
         }
 
 
